@@ -1,0 +1,17 @@
+*pyc
+*so
+*.o
+__pycache__/
+*.egg-info/
+*.nbc
+*.nbi
+.idea/
+build/
+.ninja_deps
+.ninja_log
+build.ninja
+/data
+/work_dirs
+.codex
+/.claude
+/src/legoocc/model/head/gaussian_occ_head/ops/localagg_prob/build/

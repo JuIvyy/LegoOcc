@@ -1,0 +1,11 @@
+ceiling
+floor
+wall
+window
+chair
+bed
+sofa
+table
+television
+furniture
+objects
