@@ -57,14 +57,12 @@ For setup and usage details, please refer to the documents under [`docs/`](docs)
 If you find this work useful, please consider citing:
 
 ```bibtex
-@misc{zhou2026monocularopenvocabularyoccupancy,
-      title={Monocular Open Vocabulary Occupancy Prediction for Indoor Scenes},
-      author={Changqing Zhou and Yueru Luo and Han Zhang and Zeyu Jiang and Changhao Chen},
-      year={2026},
-      eprint={2602.22667},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2602.22667},
+@inproceedings{zhou2026monocular,
+  title={Monocular open vocabulary occupancy prediction for indoor scenes},
+  author={Zhou, Changqing and Luo, Yueru and Zhang, Han and Jiang, Zeyu and Chen, Changhao},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={21627--21637},
+  year={2026}
 }
 ```
 
