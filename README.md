@@ -1,7 +1,7 @@
 <h1 align="center">LegoOcc: Monocular Open Vocabulary Occupancy Prediction for Indoor Scenes</h1>
 
 <p align="center">
-  <span style="color:#c00000; font-size: 18px;"><strong>CVPR 2026 Oral</strong></span>
+  <span style="color:#c00000; font-size: 18px;"><strong>CVPR 2026 Oral · Award Candidate</strong></span>
 </p>
 
 <p align="center"><strong>
@@ -34,9 +34,26 @@ The framework is designed for open-vocabulary indoor occupancy reasoning from mo
 
 ## News
 
+- [2026.10] :rocket: **[Demo](demo/) is released!** The pretrained model loads with a single `from_pretrained` call, and you can run LegoOcc on your own images in minutes, with **any vocabulary you like**. All you need is PyTorch: **no mmcv / mmdet / mmengine / SAM installation required**. See [Quick Demo](#quick-demo).
 - [2026.05] :rocket: Code is released
 - [2026.04] :microphone: **LegoOcc was accepted to CVPR 2026 (Oral).**
 
+## Quick Demo
+
+Try LegoOcc on a single image without installing the training environment. The [`demo/`](demo/) folder is a self-contained package that depends only on PyTorch, not on mmcv/mmdet/SAM. The pretrained model loads with `from_pretrained`, and you can query it with any vocabulary:
+
+```bash
+cd demo && pip install -r requirements.txt
+python demo.py --model JuIvyy/LegoOcc --image examples/scene0472_00_00061.jpg --vocab "sink,stove,cabinet,floor,wall"
+```
+
+```python
+from legoocc_hub import LegoOcc
+model = LegoOcc.from_pretrained("JuIvyy/LegoOcc").cuda().eval()
+out = model.predict("room.jpg", vocabulary=["sofa", "lamp", "floor", "wall"])  # out["occupancy"]: (60, 60, 36)
+```
+
+The prediction is saved as a colored voxel point cloud (`.ply`). See [`demo/README.md`](demo/README.md) for details.
 
 ## Documentation
 

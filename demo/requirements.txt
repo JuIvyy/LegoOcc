@@ -1,0 +1,11 @@
+torch>=2.1
+huggingface_hub>=0.22
+safetensors
+einops
+numpy
+opencv-python
+pillow
+ninja
+tqdm
+# optional, only for custom vocabularies:
+# open_clip_torch
