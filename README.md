@@ -4,6 +4,12 @@
   <span style="color:#c00000; font-size: 18px;"><strong>CVPR 2026 Oral · Award Candidate</strong></span>
 </p>
 
+<p align="center">
+  <a href="https://huggingface.co/JuIvyy/LegoOcc">
+    <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-yellow" alt="Hugging Face Model" />
+  </a>
+</p>
+
 <p align="center"><strong>
     <a href="https://scholar.google.com/citations?user=FZ3jPs4AAAAJ">Changqing Zhou</a><sup>1</sup>,
   <a href="https://scholar.google.com.hk/citations?user=B588EyYAAAAJ">Yueru Luo</a><sup>2</sup>,
@@ -21,7 +27,8 @@
 
 <p align="center"><strong>
     <a href="https://juivyy.github.io/legoocc/">Project Page</a> |
-    <a href="https://arxiv.org/abs/2602.22667">Paper</a>
+    <a href="https://arxiv.org/abs/2602.22667">Paper</a> |
+    <a href="https://huggingface.co/JuIvyy/LegoOcc">🤗 Model</a>
 </strong></p>
 
 <p align="center">
